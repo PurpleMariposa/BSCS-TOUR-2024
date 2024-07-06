@@ -1,0 +1,94 @@
+.sched-section { 
+    margin-top: 70px;
+    background-image: url(../img/cover.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+    text-align: center;
+    position: relative;
+    z-index: 1; /* Ensure the section is above other elements */
+    min-height: 400px; /* Optional: Use min-height to ensure a minimum height */
+}
+.sched-head {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff; /* White background */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    color: #4F6F52;
+    position: absolute;
+    bottom: -100px; /* Adjust this value to control the overlap */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2; /* Ensure the head is above the section */
+}
+
+.sched-head h1 {
+    margin-bottom: 20px;
+    color: #4F6F52;
+    animation: slideInDown 1s ease-out;
+}
+
+.sched-head p {
+    color: #4F6F52;
+    line-height: 1.6;
+    animation: slideInUp 1s ease-out;
+}
+
+/* Animation */
+.animated {
+    animation-fill-mode: both;
+    animation-duration: 1s;
+    opacity: 0;
+}
+
+.animated.fadeIn {
+    animation-name: fadeIn;
+}
+
+/* Animation keyframes */
+@keyframes slideInDown {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInUp {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.sched-con{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    background-color: #ffffff;
+    margin: 20px 0px;
+    padding: 30px 20px;
+    border-radius: 20px;
+}
+.sched-con h5{
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.sched-con h6{
+    text-align: center;
+    padding: 10px;
+    color: #FD8D14;
+}
+.sched-container{
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+

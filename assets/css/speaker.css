@@ -1,0 +1,135 @@
+.speak-section { 
+    margin-top: 70px;
+    background-image: url(../img/cover2.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+    text-align: center;
+    position: relative;
+    z-index: 1; /* Ensure the section is above other elements */
+    min-height: 400px; /* Optional: Use min-height to ensure a minimum height */
+}
+.speak-head {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff; /* White background */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    color: #4F6F52;
+    position: absolute;
+    bottom: -100px; /* Adjust this value to control the overlap */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2; /* Ensure the head is above the section */
+}
+
+.speak-head h1 {
+    margin-bottom: 20px;
+    color: #4F6F52;
+    animation: slideInDown 1s ease-out;
+}
+
+.speak-head p {
+    color: #4F6F52;
+    line-height: 1.6;
+    animation: slideInUp 1s ease-out;
+}
+
+
+/* Animation */
+.animated {
+    animation-fill-mode: both;
+    animation-duration: 1s;
+    opacity: 0;
+}
+
+.animated.fadeIn {
+    animation-name: fadeIn;
+}
+
+/* Animation keyframes */
+@keyframes slideInDown {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInUp {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.speak-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    animation: zoomIn 0.5s ease-in-out; /* Example animation */
+}
+
+.speaker-con {
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.speaker-head1 {
+    animation: slideInLeft 1s ease-out; 
+    margin: 180px 0px 0px 30px;
+}
+
+.speaker-head {
+    animation: slideInLeft 1s ease-out; 
+    margin: 30px 0px;
+}
+
+.speak-pic-con {
+    margin: 30px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+/* Keyframes for animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.5);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+

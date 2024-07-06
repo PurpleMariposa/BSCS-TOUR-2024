@@ -1,0 +1,76 @@
+/* Ensure html and body take full height and width */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Styling for the day-container section */
+.day-container {
+    margin-top: 20px;
+    padding:20px; /* Add padding for better spacing */
+}
+
+.coverpic {
+    height: 50vh; /* Adjust height for desktop */
+    width: 100%; /* Full width on small screens */
+    background: url('../img/coverpic.jpeg') center center/cover no-repeat;
+    background-color: #cccccc; /* Fallback color */
+}
+
+.title-cover {
+    padding: 20px;
+}
+
+@media (min-width: 768px) {
+    .coverpic {
+        width: 50%; /* Half width on medium screens and above */
+    }
+
+    .title-cover {
+        padding-left: 30px; /* Adjust padding for better alignment */
+    }
+}
+
+.descriptions {
+    padding: 20px 5px;
+}
+
+.headers-day {
+    margin-top: 50px;
+    background-color: #4F6F52;
+    color: white;
+    padding: 20px 30px;
+    text-align: center;
+}
+
+.home-btn {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: #4F6F52;
+    width: 120px;
+    padding: 5px 8px;
+    margin-left: 20px;
+    margin-top: 100px;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+}
+
+.home-btn:hover {
+    background-color: #86A789;
+}
+
+.home-btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.home-btn i {
+    padding-right: 15px;
+}
+
+.day1-con {
+    padding: 20px;
+}

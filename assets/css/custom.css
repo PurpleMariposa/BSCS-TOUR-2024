@@ -1,0 +1,245 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Navbar styling */
+.navbar {
+    padding: 10px 0px 15px 0px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adjust shadow parameters as needed */
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 30px;
+    color: white;
+}
+
+.navbar-nav .nav-item .nav-link:hover,
+.navbar-nav .nav-item .nav-link:focus{
+    color: #80AF81;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 992px) {
+    .navbar-toggler {
+        position: relative;
+        z-index: 1050;
+        border: none;
+        outline: none;
+    }
+
+    .navbar-toggler:focus {
+        outline: none;
+        box-shadow: none;
+    }
+
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%2855, 55, 55, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+
+    .navbar-collapse {
+        background-color: #f8f9fa;
+        border-top: 1px solid rgba(0,0,0,0.1);
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+        margin-top: 10px;
+    }
+
+    .navbar-nav {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-item {
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+
+    .navbar-collapse {
+        position: relative;
+        top: 0;
+        left: 0;
+        background: linear-gradient(45deg, #f8f9fa, #e0e0e0);
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Headings styling */
+.headings-home {
+    margin-top: 50px;
+    margin-bottom: 100px;
+  
+}
+.headings {
+    justify-content: center;
+    padding-right: 20px;
+    text-align: center;
+}
+
+/* Slideshow container styling */
+.slideshow-container {
+    padding: 40px 20px 0px 20px;
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides img {
+    vertical-align: middle;
+}
+
+/* Dots container styling */
+.dot-container {
+    text-align: center; /* Center dots */
+    margin-bottom: 30px;
+}
+
+.dot {
+    height: 8px;
+    width: 8px;
+    margin: 0 5px; /* Adjust horizontal spacing */
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+}
+
+.section1 {
+    margin: 20px 0px;
+    padding: 10px 0px;
+}
+
+.indus-pic {
+    margin: 10px 5px;
+}
+
+.section1, a {
+    text-decoration: none;
+}
+
+.read-more-btn i {
+    padding-left: 15px;
+}
+
+.read-more-btn a {
+    color: white;
+    text-decoration: none;
+}
+
+.read-more-btn {
+    background-color: #254336;
+    padding: 8px 5px;
+    width: 150px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+}
+
+.read-more-btn:hover {
+    background-color: #4f7564;
+}
+
+.headings2 {
+    align-items: center;
+    text-align: center;
+    /* background: linear-gradient(to bottom, #86A789, #C4DCC1, #caddc8, #cfddcd); Adjust colors as needed */
+}
+
+.head-heading2 {
+    margin: 50px 0px 0px 0px;
+    padding: 30px 20px;
+    align-items: center;
+    text-align: center;
+    border-bottom: 3px solid #1A5319;
+    border-top: 3px solid #1A5319;
+}
+
+.day-con {
+    background: linear-gradient(to bottom, #86A789, #C4DCC1, #caddc8, #cfddcd);
+    margin: 20px;
+    width: 100%;
+    max-width: 300px;
+    height: 620px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid gray;
+}
+
+.bio-con {
+    border: 1px solid #4F6F52;
+    margin: 50px 20px;
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+
+.thanks-con {
+    background-color: #e0ebd9;
+    padding: 20px 50px; /* Adjusted padding for better alignment */
+    margin: 50px 20px;
+    border-radius: 10px;
+    color: #263A29;
+}
+
+.learn-btn a {
+    color: white;
+    text-decoration: none;
+}
+
+.learn-btn {
+    background-color: #254336;
+    padding: 10px 5px;
+    width: 120px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+}
+
+.learn-btn:hover {
+    background-color: #4f7564;
+}
+
+.pics-baguio {
+    padding: 10px 20px;
+}
+
+.baguio-con {
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: #4F6F52;
+}
+
+.pics-baguio img{
+    padding: 0%;
+    margin: 0%;
+}
+
